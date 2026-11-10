@@ -27,7 +27,7 @@ Change it there and every page updates. Page titles and descriptions for search 
 | `app/contact/page.tsx`, `components/ContactForm.tsx` | Contact page and enquiry form |
 | `components/` | Header, footer, shared UI |
 | `public/images/` | Photos and logo |
-| `app/favicon.ico`, `app/icon.png`, `app/apple-icon.png`, `public/icons/` | Favicons and app icons |
+| `app/favicon.ico`, `app/icon.png`, `app/apple-icon.png` | Favicons |
 | `lib/og.tsx`, `app/**/opengraph-image.tsx` | Social share images (1200×630, generated at build time) |
 
 ## SEO built in
@@ -35,8 +35,8 @@ Change it there and every page updates. Page titles and descriptions for search 
 - A unique title, meta description and canonical URL on every page
 - Open Graph and Twitter cards with a branded share image for each page
 - JSON-LD structured data: LocalBusiness, WebSite, Service, FAQPage, BreadcrumbList, AboutPage and ContactPage
-- `sitemap.xml` (including images), `robots.txt`, a web app manifest and `llms.txt`
-- Favicon (`.ico`), PNG icon, Apple touch icon and maskable Android icon
+- `sitemap.xml` (including images), `robots.txt` and `llms.txt`
+- Favicon (`.ico`), PNG icon and Apple touch icon (no web app manifest, so browsers don't offer to install the site as an app)
 - Vercel preview deployments are set to `noindex`; only production is indexed
 - Security headers, with `x-powered-by` removed
 
